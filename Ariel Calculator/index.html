@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Calculator</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: brown; font-family: cursive;">Area Calculator</h1>
+    <script>
+        var choice=prompt("Welcome to Area Calculator!\nPlease enter your choice:\n1. Rectangle \n2. Circlr \n3. Triangle")
+        if (choice== '1'){
+            var length=parseFloat(prompt("Enter the length of the rectangle"));
+            var bredth=parseFloat(prompt("Enter the bredth of the rectangle"));
+            var area=length*bredth;
+            alert("The area of the Triangle is "+area);
+        }
+        if (choice=='2'){
+            var r=parseFloat(prompt("Enter the radius of the Circle"));
+            var area=3.142*r*r;
+            alert("The area of the Circle is "+area);
+        }
+        if(choice==='3'){
+            var height=parseFloat(prompt("Enter the length of the Triangle"));
+            var bredth=parseFloat(prompt("Enter the bredth of the Triangle"));
+            var area=0.5*height*bredth;
+            alert("The area of the Triangle is "+area)
+        }
+    </script>
+</body>
+</html>
